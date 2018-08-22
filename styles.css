@@ -21,6 +21,10 @@ h1 {
 
 }
 
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
 
 .section {
       padding-top: 130px;
@@ -47,4 +51,38 @@ h1 {
 }
 
 .section-white
-.section-second
+
+
+.section-second{
+    background-color: #333333;
+    color: white;
+}
+
+/**
+ * Grid
+ */
+
+
+.grid {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.grid::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.grid > div {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.grid-1-3 {
+    width: calc(100% * 1 / 3.001);
+}
+
+
