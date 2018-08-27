@@ -2,33 +2,76 @@
 <html>
 <head>
     <meta charset=“utf-8“>
-    <title>Jessica</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <title>jessica</title>
+    <link rel="stylesheet" href="css/styles.css">
 
+    <div class="container">
+        <nav>
+            <ul>
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">Fotos</a> </li>
+                <li> <a href="#">Wir</a> </li>
+                <li> <a href="#">Kontakt</a> </li>
+            </ul>
+        </nav>
+    </div>
+</head>
+
+<body>
 <div class="section section-primary height-viewport flex flex-middle flex-center">
     <div class="text-center">
-        <h1 class="text-uppercase margin-remove-top">Jessica</h1>
+        <h1 class="text-uppercase margin-remove-top">Welt der Fotografie</h1>
+        <button class="button button-default">Fotos</button>
     </div>
 </div>
 
-<div class="section section-white">
-</div>
-
-<div class="section section-second">
+<!-- Slider -->
+<div class="section section-photo">
     <div class="container">
-    <div class="grid text-center">
-    <div class="grid-1-3">
+         <img class="mySlides" src="images/image-1.png">
+         <img class="mySlides" src="images/image-2.png">
 
-        <p>j.fellmann@woche-pass.ch</p>
-    <p> Haldenfeld 6, 6253 Uffikon</p>
-    <p> 062 765 33 31</p>
+            <script>
+              var slideIndex = 0;
+              carousel();
 
+              function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {slideIndex = 1}
+                x[slideIndex-1].style.display = "block";
+                setTimeout(carousel, 3000);
+              }
+            </script>
+
+<!-- Footer -->
+<div class="section section section-secondary">
+    <div class="container">
+
+        <div class="grid text-center">
+            <div class="grid-1-2">
+                <h3 class="text-uppercase">Wir sind gerne für Sie da</h3>
+                <p>
+                    Telefon 062 765 33 3117<br />
+                    E-Mail muster@muster.ch
+                </p>
+            </div>
+            <div class="grid-1-2">
+                <h3 class="text-uppercase">soziale Medien</h3>
+                <p>
+                    Instagram<br />
+                    Facebook Uhr
+                </p>
+            </div>
+
+        </div>
+
+    </div>
 </div>
-</div>
-
-
 
 </body>
 </html>
