@@ -89,8 +89,8 @@ header ::after {
 }
 
 .section-small {
-    padding-top: 5px;
-    padding-bottom:5px;
+    padding-top: 30px;
+    padding-bottom: 30px;x;
 }
 
 .section-primary {
@@ -99,8 +99,9 @@ header ::after {
 }
 
 .section-secondary {
-    background-color:#FD6E6A;
-    color: white;
+    background-color: white;
+    color: black;
+    font-size: 12px;
 }
 
 .section-photo {
